@@ -1,4 +1,4 @@
-// client.js
+// 클라이언트
 import ApolloClient from "apollo-boost";
 
 const client = new ApolloClient({
