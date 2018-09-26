@@ -1,5 +1,5 @@
 import React from "react";
-import style from "styled-components";
+import styled from "styled-components";
 import { Query } from "react-apollo"; // react-apollo는 리액트에 연결하는 방법
 import { HOME_PAGE } from "./queries";
 import Movie from "./Movie";

@@ -16,7 +16,10 @@ const Card = styled.div`
 `;
 
 const Title = styled.span`
+  display: flex;
+  flex-direction: column;
   background-color: white;
+  opacity: 0.95;
   width: auto;
   padding: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -25,14 +28,22 @@ const Title = styled.span`
   left: 0;
   right: 0;
   margin: auto;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+`;
+
+const Rating = styled.span`
+  padding-top: 10px;
+  font-size: 13px;
 `;
 
 const Movie = ({ id, title, rating, poster }) => (
   <Link to={`/details/${id}/`}>
     <Card background={poster}>
       <Title>
-        {title} / {rating}
-        ⭐️
+        {title}
+        <Rating>⭐{rating}</Rating>
       </Title>
     </Card>
   </Link>

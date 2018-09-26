@@ -6,7 +6,7 @@ const Detail = ({
     params: { movieId }
   }
 }) => {
-  console.log(match);
+  console.log(movieId);
   return <div>Detail</div>;
 };
 
